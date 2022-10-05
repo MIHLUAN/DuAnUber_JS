@@ -110,8 +110,8 @@ document.querySelector("#btnInHoaDon").onclick = function () {
         <tr class="mt-5" style="height: 50px; border-top: 1px solid rgb(170, 169, 169);">
             <td>${uber.tenUber}</td>
             <td>${uber.soKM - 1} km</td>
-            <td>${uber.tien1KM}</td>
-            <td>${uber.tien1KM * (uber.soKM - 1)}</td>
+            <td>${uber.tien1_20KM}</td>
+            <td>${uber.tien1_20KM * (uber.soKM - 1)}</td>
         </tr>
         `;
   } else if (uber.soKM > 20) {
@@ -125,14 +125,14 @@ document.querySelector("#btnInHoaDon").onclick = function () {
         <tr class="mt-5" style="height: 50px; border-top: 1px solid rgb(170, 169, 169);">
             <td>${uber.tenUber}</td>
             <td>19 km</td>
-            <td>${uber.tien1KM}</td>
-            <td>${uber.tien1KM * 19}</td>
+            <td>${uber.tien1_20KM}</td>
+            <td>${uber.tien1_20KM * 19}</td>
         </tr>
         <tr class="mt-5" style="height: 50px; border-top: 1px solid rgb(170, 169, 169);">
             <td>${uber.tenUber}</td>
             <td>${uber.soKM - 20} km</td>
-            <td>${uber.tien1KM}</td>
-            <td>${uber.tien1KM * (uber.soKM - 20)}</td>
+            <td>${uber.tienTren20KM}</td>
+            <td>${uber.tienTren20KM * (uber.soKM - 20)}</td>
         </tr>
         `;
   }
